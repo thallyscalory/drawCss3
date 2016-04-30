@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<title>Adriano Barbosa - desenho tentativa</title>
+		<meta charset="utf-8"/>
+		<style type="text/css">
+			body, html {
+				margin:0;
+				padding:0;
+			}
+			.container {
+				width: 500px;
+				height: 200px;
+				margin: 0 auto;
+				padding: 50px;
+				background: #eee;
+				overflow: hidden;
+			}
+			.coreL, .coreR, .resto {
+				display:block;
+				background: #f00;
+				width: 100px;
+				height: 100px;
+				position: relative;
+				z-index: 2;
+			}
+			.coreL, .coreR {
+				border-radius: 50%;
+			}
+			.resto{
+				border-top-left-radius:50%;
+				border-bottom-left-radius:20px;
+				border-top-right-radius:20px;
+				transform: rotate(45deg);
+				background: linear-gradient(to  right, #f00,#f00,#f00,#f00,#e20000);
+			}
+			.coreR {
+				top: -102px;
+				left: 50px;
+				background: linear-gradient(to right, #e20000,#e20000,#f00,#f00,#e20000);
+				z-index:1;
+			}
+			.resto{
+				top: -176.5px;
+				left: 24.2px;
+			}
+			.ef1 {
+				display: block;
+				width: 90px;
+				height: 90px;
+				position: relative;
+				top: -295px;
+				left: 5px;
+				border-radius: 50%;
+				background: linear-gradient(to top left, rgba(255,255,255,0), rgba(255,255,255,0.1),rgba(255,255,255,0.6),#fff);				
+				z-index: 3;
+			}
+			.sombra{
+				display: block;
+				width: 100px;
+				height: 100px;
+				position: relative;
+				top: -390px;
+				left: 20px;
+				border-top-left-radius:50%;
+				border-bottom-left-radius:20px;
+				border-top-right-radius:20px;
+				transform: rotate(45deg);
+				box-shadow: 20px 10px 30px #f00;
+			}
+			.author{
+				float: right;
+				font: 20px Tahoma;
+				line-height: 45px;
+				color: #999;
+				text-shadow: 1px 1px 1px #333;
+				width:300px;
+			}
+			.author span{
+				font-size: 2em;
+			}
+			.less {
+				font-size: 0.6em!important;
+				text-shadow: none!important;
+				font-family: Helvetica;
+				color: #333;
+			}
+		</style>
+	</head>
+	<body>
+			<div class="container">
+				<p class="author">
+					<span>Adriano Barbosa</span> <br/> Desenho com Css3 Puro
+					<br/>
+					<span class="less">
+						"Você é o CSS3 do meu HTML!" <br/>
+						Agora ficou mais claro ainda 
+						o que diz essa frase.
+					</span>
+				</p>
+				<div class="coreL"></div>
+				<div class="coreR"></div>
+				<div class="resto"></div>
+				<div class="ef1"></div>
+				<div class="sombra"></div>
+			</div>
+	</body>
+</html>
